@@ -1,0 +1,1234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #000;
+    /* background: linear-gradient(transparent, #000); */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background: linear-gradient(transparent, #cfef00); */
+    background: #cfef00;
+}
+
+/* strat CSS OF HOME SECTION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar h1 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.talkmenu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.talkbutton {
+    display: flex;
+    gap: 10px;
+}
+
+
+.talkmenu button {
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .2s;
+    padding: 8px 15px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.talkbutton a {
+    color: #000;
+}
+
+button:hover {
+    background: #c4e201;
+}
+
+
+.talkmenu img {
+    cursor: pointer;
+}
+
+.menu-btn a {
+    text-decoration: none;
+    border: none;
+}
+
+.menu-btn {
+    background: url(/Images/Menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.menu-btn.active {
+    z-index: 999;
+    background: url(/Images/Close.png)no-repeat;
+    background-size: 35px;
+    background-position: center;
+    transition: 0.3s ease;
+    display: none;
+}
+
+/* home section */
+
+
+.Home {
+    width: 100%;
+    padding: 30px 30px 10px 30px;
+    overflow: hidden;
+}
+
+.home {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text1 h1 {
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.8s ease-in-out;
+}
+
+.text1 h1 span {
+    font-weight: 600;
+    text-decoration: underline #cfef00;
+}
+
+.text1 img {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    background-position: center;
+    /* background: url(/Images/Studio_Project.gif); */
+    border: 1px solid #000;
+    border-radius: 500px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.Home p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    transition: 0.8s ease-in-out;
+}
+
+.Home span h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+    transition: 0.8s ease-in-out;
+}
+
+.Home button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.joinbtn img {
+    width: 100px;
+    animation: rotateText 8s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.loctime {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.loctime .location {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.loctime .location span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.loctime .time {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.loctime .time span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-menu{
+    width: 200px;
+    height: 48px;
+    display: flex;
+    background: #000;
+    border-radius: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-menu a{
+    display: flex;
+    align-items: center;
+}
+
+
+/* END CSS OF HOME SECTION */
+
+/* Start css of process */
+
+.Process {
+    width: 100%;
+    background-color: #000;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.Process hr {
+    margin: 10px;
+}
+
+.process h1 {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-decoration: underline #CFEF00;
+    transition: 0.8s ease-in-out;
+}
+
+.workpro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.leftwork {
+    width: 30%;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.leftwork h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffff;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+}
+
+.leftwork p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.rightwork {
+    width: 70%;
+    color: #ffff;
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    transition: 0.8s ease-in-out;
+}
+
+.procard {
+    border-left: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+.procard h1 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #cfef00;
+    margin-top: 10px;
+}
+
+.procard span {
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: underline #CFEF00;
+}
+
+.procard p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.projectstats {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 2em;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #cfef00;
+    border-radius: 50px;
+}
+
+.projectstats h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.projectstats span {
+    color: #cfef00;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* end css of process */
+
+/* start Service card section */
+
+.servicecard {
+    width: 100%;
+    padding: 30px;
+}
+
+.servicecard h1 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    text-decoration: underline #CFEF00;
+}
+
+.servicetect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.servicetect h1 {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.arrowbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.arrowbtn span {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: #000;
+    border-radius: 50%;
+    border: 0.5px solid #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CFEF00;
+
+}
+
+.arrowbtn span:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.arrowbtn button {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.productCarousels {
+    margin-top: 30px;
+}
+
+.splide__list {
+    display: flex;
+    gap: 2em;
+}
+
+.splide__slide {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.card {
+    padding: 20px;
+    width: 402px;
+    min-height: 540px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.card h1 span {
+    margin-right: 15px;
+    padding: 12px 15px;
+    background: #CFEF00;
+}
+
+.imgcard {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imgcard img {
+    width: 100%;
+}
+
+.textcard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textcard h1 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+}
+
+.textcard a {
+    text-decoration: none;
+    color: #000;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+    background: #CFEF00;
+    justify-content: center;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* end Service card section */
+
+/* start startup section */
+
+.startup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startupsec {
+    min-width: 90%;
+    background: #CFEF00;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.startupsec h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+}
+
+.counterstats {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 51px;
+}
+
+.textsec {
+    display: flex;
+    text-align: center;
+}
+
+.textsec span {
+    font-weight: 200;
+    font-size: 80px;
+}
+
+.textsec span h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+/* end startup section */
+
+/* start section of .project */
+
+.project {
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.project h1 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline #CFEF00;
+}
+
+.projectimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.img1,
+.img2 {
+    transition: .3s ease-in-out;
+}
+
+.projectimg p {
+    margin-top: 20px;
+    margin-left: 26px;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.projectimg p span {
+    padding: 4px 14px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.projectbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.projectbtn button {
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.projectbtn button:hover {
+    background: #c4e201;
+}
+
+.projectbtn button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.projectbtn button:hover svg {
+    transform: translateX(5px);
+}
+
+.projectimg p span:hover {
+    background: #c4e201;
+    color: #000;
+}
+
+.projectimg img {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+.projectimg img:hover {
+    transform: scale(1.05);
+}
+
+/* End section of .project */
+
+/* Start section  of connect */
+
+.connect {
+    width: 100%;
+    padding: 30px;
+    background: #000;
+}
+
+.connect h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    text-decoration: underline #CFEF00;
+}
+
+.lettalk {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.lettalk h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+}
+
+.lettalk img {
+    animation: rotateText 8s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.lettalk h1:hover {
+    text-decoration: underline #c4e201;
+}
+
+.mailcontact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mailcontact a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+    transition: 0.8s ease-in-out;
+}
+
+.mailcontact a:hover {
+    color: #c4e201;
+}
+
+
+/* End section  of connect */
+
+
+/* end of icons scrtion */
+
+.wrapper {
+    display: flex;
+    list-style: none;
+    padding-top: 40px;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 30px;
+}
+
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+}
+
+.wrapper .user:hover,
+.wrapper .user:hover .tooltip,
+.wrapper .user:hover .tooltip::before {
+    background: #c4e201;
+    color: #000;
+}
+
+/* end of icons scrtion */
+
+/* fotter section */
+
+footer {
+    width: 100%;
+    color: #ffffff;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #CFEF00;
+    top: -10px;
+}
+
+.left .content p {
+    text-align: left;
+    font-size: 15px;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #f12020;
+}
+
+.center .content .text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: #c4e201;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: #3498db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #CFEF00;
+    color: #000;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: #CFEF00;
+    color: #000;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #CFEF00;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+
+/* end fotter section */
+
+/* ************************************************************************************************************ */
+/* media query css */
+
+@media (max-width: 1440px) {
+    section {
+        padding: 30px;
+    }
+
+    .counterstats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1040px) {
+    section {
+        padding: 30px;
+    }
+
+    .counterstats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 945px) {
+    section {
+        padding: 30px;
+    }
+
+
+    .text1 h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .Home p {
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+
+    .Home span h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .servicetxt h1 {
+        font-size: 60px;
+    }
+
+    .work h1 {
+        font-size: 60px;
+    }
+
+    .workpro {
+        flex-direction: column;
+    }
+
+    .leftwork {
+        width: 100%
+    }
+
+    .rightwork {
+        width: 100%
+    }
+
+    .counterstats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projectimg {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .rightdetail h1 {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+
+    .startupsec h1 {
+        font-size: 25px;
+    }
+
+    .lettalk h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .mailcontact a {
+        font-size: 30px;
+    }
+
+    .counterstats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .counterstats {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rightwork {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .process h1 {
+        font-size: 30px;
+    }
+
+    .servicecard h1 {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .servicetect {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .mailcontact a {
+        font-size: 30px;
+    }
+
+    .text1 h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .loctime .location {
+        display: none;
+    }
+
+    .loctime .time {
+        display: none;
+    }
+
+    .loctime{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav-menu{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .joinbtn {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    section {
+        padding: 30px;
+    }
+
+    .navbar h1 {
+        display: none;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+
+    .loctime .location span {
+        font-size: 15px;
+    }
+
+    .loctime .time span {
+        font-size: 15px;
+    }
+
+    .work h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .text1 video {
+        margin-left: 0px;
+        background-position: center;
+    }
+
+    .brandtxt h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .projectimg p {
+        font-size: 20px;
+    }
+
+    .projectimg p span {
+        font-size: 13px;
+    }
+
+    .text1 img {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
